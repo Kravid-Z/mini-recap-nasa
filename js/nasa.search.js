@@ -5,7 +5,7 @@ function searchNASA(query) {
         .then(renderResults)
         .catch(console.error)
 }
-
+const urlBuilder = (url) => `http://ubeytdemir.me/mini-recap-nasa${url}`
 function renderResults(data) {
     const items = data.collection.items;
   
@@ -25,7 +25,7 @@ function SearchResultComponent(image, title="", description="",id="") {
         <div class="card" style="width: 18rem;">
             <img src="${image}" class="card-img-top" alt="apod">
             <div class="card-body">
-                <a href="/details.html?nasa_id=${id}"  class="text-light"> 
+                <a href="${urlBuilder(`/details.html?nasa_id=${id}`)}"  class="text-light"> 
                 <h5>${title}</h5>
                 </a>
                 <p class="card-text">${description}</p>
