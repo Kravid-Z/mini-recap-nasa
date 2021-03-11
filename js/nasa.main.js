@@ -3,7 +3,7 @@ const searchButtonHandler = function(){
     const searchInput = document.getElementById("search-input")
     const query = searchInput.value
     if(query){
-        window.location.replace(`/search.html?query=${searchInput.value}`)
+        window.location.href=`/search.html?query=${searchInput.value}`
     }
     else{
         alert('Please type something to search 🤓')
