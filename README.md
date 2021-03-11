@@ -23,14 +23,9 @@
 
 In start file , there is an input and button.
 
-1. When input field is filled , on button click page should redirect to search page.
+On the search page, we will perform a search request to NASA API and process incoming results.
 
-
-2. In search page we will perform a search request to NASA API and process incoming results.
-
-
-3. There is 2 type media types here : image and video. We will design 2 components for them and load them into correct component.
-
+There are a thumbnail and nasa_id on each object. We will display a thumbnail in the grid when the user clicks on the title, we will redirect to the details page and show the rest of the collection.
 
 
 
